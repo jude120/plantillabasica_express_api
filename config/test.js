@@ -1,7 +1,9 @@
+require('dotenv').config();
 module.exports={
     jwt:{
-        secreto:'secretodetest',
-        tiempoExpiracion:'12h'
+        secreto: process.env.JWTSECRET,
+        tiempoExpiracion: process.env.JWTTIMEEXPIRATION
     },
-    suprimirlogs:false,
+    suprimirlogs:process.env.LOGS,
+    origin: process.env.CORS_ORIGIN_TEST
 }

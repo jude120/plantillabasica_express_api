@@ -1,8 +1,11 @@
 const ambiente = process.env.NODE_ENV || 'development';
+require('dotenv').config();
 const configuracionBase ={
     jwt:{},
-    puerto:3000,
-    suprimirlogs:false,
+    puerto:process.env.PUERTO,
+    suprimirlogs:process.env.LOGS ==='true' || process.env.LOGS ==='TRUE' ? true:false,
+    user_swagger:process.env.USER_SWAGGER,
+    userpass_swagger:process.env.USERPASS_SWAGGER
 };
 let configuracionDeAmbiente ={};
 

@@ -1,5 +1,5 @@
 {
-  "name": "apimonitor",
+  "name": "ApiNabelle2022",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -10,18 +10,23 @@
   "author": "Judith Bolaños",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2",
-    "@hapi/joi": "^17.1.1",
-    "axios": "^0.20.0",
-    "debug": "^4.1.1",
+    "axios": "^0.26.0",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-basic-auth": "^1.2.1",
+    "joi": "^17.6.0",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.16.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.2.0"
+    "sequelize-cli": "^6.4.1"
   }
 }

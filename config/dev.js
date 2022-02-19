@@ -1,6 +1,8 @@
+require('dotenv').config();
 module.exports = {
     jwt: {
-        secreto: 'secretodedesarrollo',
-        tiempoExpiracion: '1h'//'900000' //'120000'
+        secreto: process.env.JWTSECRET,
+        tiempoExpiracion: process.env.JWTTIMEEXPIRATION
     },
+    origin: process.env.CORS_ORIGIN_DEV
 }
